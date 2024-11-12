@@ -16,11 +16,17 @@ public class Sandwich implements Product {
         this.toppings = new ArrayList<>();
     }
 
-    public void addPremiumTopping(Topping topping) {}
+    public String getSize() {
+        return size;
+    }
 
-    public void addRegularTopping(Topping topping) {}
+    public void addPremiumTopping(Topping premiumTopping) {
+        toppings.add(premiumTopping);
+    }
 
-    public String getSize() {}
+    public void addRegularTopping(Topping regularTopping) {
+        toppings.add(regularTopping);
+    }
 
     @Override
     public double calculatePrice(String size) {
