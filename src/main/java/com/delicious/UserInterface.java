@@ -96,7 +96,13 @@ public class UserInterface {
         System.out.println("Drink added: " + drink);
     }
 
-    private void addChipsToOrder() {}
+    private void addChipsToOrder(Order order) {
+        System.out.print("Choose chip type: ");
+        String chipType = scanner.next();
+        Chips chips = new Chips(chipType);
+        order.addChips(chips);
+        System.out.println("Chips added: " + chips);
+    }
 
     private void checkoutOrder() {}
 }
