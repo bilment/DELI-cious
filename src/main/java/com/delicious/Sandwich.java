@@ -23,9 +23,32 @@ public class Sandwich implements Product {
     public String getSize() {}
 
     @Override
-    public double calculatePrice(String size) {}
+    public double calculatePrice(String size) {
+        double price = 0;
+
+        switch (size) {
+            case "4":
+                price += 5.50;
+                break;
+            case "8":
+                price += 7.00;
+                break;
+            case "12":
+                price += 8.50;
+                break;
+        }
+
+        for (Topping topping : toppings) {
+            price += topping.calculatePrice(size);
+        }
+
+        return price;
+    }
 
     @Override
-    public String toString() {}
+    public String toString() {
+        return "Sandwich - Size: " + size + "\", Bread: " + breadType + ", Toasted: " + (toasted ? "Yes" : "No") +
+                "\nToppings: " + toppings;
+    }
 }
 
