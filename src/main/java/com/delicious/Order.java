@@ -10,7 +10,7 @@ public class Order {
     private List<Drink> drinks;
     private List<Chips> chips;
 
-    public Order(List<Sandwich> sandwiches, List<Drink> drinks, List<Chips> chips) {
+    public Order() {
         this.sandwiches = sandwiches;
         this.drinks = drinks;
         this.chips = chips;
