@@ -12,7 +12,18 @@ public class Drink implements Product {
     public String getSize() {}
 
     @Override
-    public double calculatePrice(String size) {}
+    public double calculatePrice(String size) {
+        switch (size) {
+            case "Small":
+                return 2.00;
+            case "Medium":
+                return 2.50;
+            case "Large":
+                return 3.00;
+            default:
+                return 0.00;
+        }
+    }
 
     @Override
     public String toString() {}
