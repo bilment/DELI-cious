@@ -86,7 +86,15 @@ public class UserInterface {
         System.out.println("Sandwich added: " + sandwich);
     }
 
-    private void addDrinkToOrder() {}
+    private void addDrinkToOrder(Order order) {
+        System.out.print("Choose drink size (Small/Medium/Large): ");
+        String drinkSize = scanner.next();
+        System.out.print("Choose flavor: ");
+        String flavor = scanner.next();
+        Drink drink = new Drink(drinkSize, flavor);
+        order.addDrink(drink);
+        System.out.println("Drink added: " + drink);
+    }
 
     private void addChipsToOrder() {}
 
