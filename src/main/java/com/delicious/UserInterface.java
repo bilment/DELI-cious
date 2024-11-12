@@ -10,10 +10,10 @@ public class UserInterface {
     }
 
     public void showMainMenu() {
-        System.out.println("-------------------------------------------------------------");
-        System.out.println("=== Welcome to DELI-cious! ===");
-        System.out.println("Please select an option below:");
-        System.out.println("-------------------------------------------------------------");
+        System.out.println("========================================");
+        System.out.println("         WELCOME TO DELI-cious!         ");
+        System.out.println("========================================");
+        System.out.println("  Please select an option below:");
         System.out.println("1) New Order");
         System.out.println("0) Exit");
         System.out.print("Your choice: ");
@@ -23,12 +23,15 @@ public class UserInterface {
         boolean ordering = true;
 
         while (ordering) {
-            System.out.println("Order Menu:");
-            System.out.println("1) Add Sandwich");
-            System.out.println("2) Add Drink");
-            System.out.println("3) Add Chips");
-            System.out.println("4) Checkout");
-            System.out.println("0) Cancel Order");
+            System.out.println("****************************************");
+            System.out.println("*              ORDER MENU              *");
+            System.out.println("****************************************");
+            System.out.println("*  1) Add Sandwich                     *");
+            System.out.println("*  2) Add Drink                        *");
+            System.out.println("*  3) Add Chips                        *");
+            System.out.println("*  4) Checkout                         *");
+            System.out.println("*  0) Cancel Order                     *");
+            System.out.println("****************************************");
             System.out.print("Your choice: ");
 
             int choice = scanner.nextInt();

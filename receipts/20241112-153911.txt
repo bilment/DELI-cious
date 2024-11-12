@@ -1,0 +1,9 @@
+DELI-cious Order Receipt
+Order Date: 2024-11-12 15:39:11
+
+Sandwich - Size: 12", Bread: White, Toasted: Yes
+Toppings: [Lettuce - Price: $0.0, Peppers - Price: $0.0]
+Drink - Size: Large, Flavor: Coco-Cola
+Chips - Type: BBQ
+
+Total Price: $13.0
