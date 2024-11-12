@@ -1,4 +1,5 @@
 package com.delicious;
+import java.util.List;
 
 public class Order {
     private List<Sandwich> sandwiches;
@@ -11,11 +12,17 @@ public class Order {
         this.chips = chips;
     }
 
-    public void addSandwich() {}
+    public void addSandwich(Sandwich sandwich) {
+        sandwiches.add(sandwich);
+    }
 
-    public void addDrink( ) {}
+    public void addDrink(Drink drink) {
+        drinks.add(drink);
+    }
 
-    public void addChips() {}
+    public void addChips(Chips chip) {
+        chips.add(chip);
+    }
 
     public double calculateTotalPrice() {}
 
