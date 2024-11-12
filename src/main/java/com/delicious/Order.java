@@ -3,6 +3,7 @@ import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Order {
@@ -11,9 +12,9 @@ public class Order {
     private List<Chips> chips;
 
     public Order() {
-        this.sandwiches = sandwiches;
-        this.drinks = drinks;
-        this.chips = chips;
+        sandwiches = new ArrayList<>();
+        drinks = new ArrayList<>();
+        chips = new ArrayList<>();
     }
 
     public void addSandwich(Sandwich sandwich) {
