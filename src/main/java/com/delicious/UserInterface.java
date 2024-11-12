@@ -104,5 +104,16 @@ public class UserInterface {
         System.out.println("Chips added: " + chips);
     }
 
-    private void checkoutOrder() {}
+    private void checkoutOrder(Order order) {
+        System.out.println("Checkout:");
+        System.out.println(order);
+        System.out.print("Confirm order? (yes/no): ");
+        String confirm = scanner.next();
+        if (confirm.equalsIgnoreCase("yes")) {
+            order.saveReceipt();
+            System.out.println("Order completed and receipt saved.");
+        } else {
+            System.out.println("Order canceled.");
+        }
+    }
 }
