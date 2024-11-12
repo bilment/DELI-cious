@@ -8,8 +8,12 @@ public class Chips implements Product {
     }
 
     @Override
-    public double calculatePrice(String size) {}
+    public double calculatePrice(String size) {
+        return 1.50;
+    }
 
     @Override
-    public String toString() {}
+    public String toString() {
+        return "Chips - Type: " + type;
+    }
 }
