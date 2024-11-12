@@ -69,5 +69,24 @@ public class Order {
     }
 
     @Override
-    public String toString() {}
+    public String toString() {
+        StringBuilder sb = new StringBuilder("Order Details:\n");
+
+        sb.append("Sandwiches:\n");
+        for (Sandwich sandwich : sandwiches) {
+            sb.append(sandwich).append("\n");
+        }
+
+        sb.append("Drinks:\n");
+        for (Drink drink : drinks) {
+            sb.append(drink).append("\n");
+        }
+
+        sb.append("Chips:\n");
+        for (Chips chip : chips) {
+            sb.append(chip).append("\n");
+        }
+
+        return sb.toString();
+    }
 }
