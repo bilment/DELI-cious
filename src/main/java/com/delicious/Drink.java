@@ -9,7 +9,9 @@ public class Drink implements Product {
         this.flavor = flavor;
     }
 
-    public String getSize() {}
+    public String getSize() {
+        return size;
+    }
 
     @Override
     public double calculatePrice(String size) {
@@ -26,6 +28,8 @@ public class Drink implements Product {
     }
 
     @Override
-    public String toString() {}
+    public String toString() {
+        return "Drink - Size: " + size + ", Flavor: " + flavor;
+    }
 }
 
