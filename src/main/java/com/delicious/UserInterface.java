@@ -9,7 +9,12 @@ public class UserInterface {
         this.scanner = scanner;
     }
 
-    public void showMainMenu() {}
+    public void showMainMenu() {
+        System.out.println("=== Welcome to DELI-cious! === Please select an option below:");
+        System.out.println("1) New Order");
+        System.out.println("0) Exit");
+        System.out.print("Your choice: ");
+    }
 
     public void showOrderMenu() {}
 
