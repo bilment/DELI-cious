@@ -45,7 +45,7 @@ public class Sandwich implements Product {
         }
 
         for (Topping topping : toppings) {
-            price += topping.calculatePrice(size);
+            price += topping.calculatePrice(this.size);
         }
 
         return price;

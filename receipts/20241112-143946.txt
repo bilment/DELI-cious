@@ -1,0 +1,9 @@
+DELI-cious Order Receipt
+Order Date: 2024-11-12 14:39:46
+
+Sandwich - Size: 12", Bread: white, Toasted: Yes
+Toppings: [Steak - Price: $0.0, Ham - Price: $0.0, Salami - Price: $0.0, American - Price: $0.0, Provolone - Price: $0.0, Cheddar - Price: $0.0, Lettuce - Price: $0.0, Peppers - Price: $0.0]
+Drink - Size: large, Flavor: cola
+Chips - Type: lays
+
+Total Price: $25.75

@@ -10,7 +10,10 @@ public class UserInterface {
     }
 
     public void showMainMenu() {
-        System.out.println("=== Welcome to DELI-cious! === Please select an option below:");
+        System.out.println("-------------------------------------------------------------");
+        System.out.println("=== Welcome to DELI-cious! ===");
+        System.out.println("Please select an option below:");
+        System.out.println("-------------------------------------------------------------");
         System.out.println("1) New Order");
         System.out.println("0) Exit");
         System.out.print("Your choice: ");
@@ -55,19 +58,24 @@ public class UserInterface {
     }
 
     private void addSandwichToOrder(Order order) {
-        System.out.print("Choose sandwich size (4/8/12): ");
+        System.out.print("Choose sandwich size (4\"/8\"/12\"): ");
         String size = scanner.next();
-        System.out.print("Choose bread type (white/wheat/rye/wrap): ");
+        System.out.print("Choose bread type (White/Wheat/Rye/Wrap): ");
         String bread = scanner.next();
-        System.out.print("Would you like it toasted? (yes/no): ");
+        System.out.print("Would you like it toasted? (Yes/No): ");
         boolean toasted = scanner.next().equalsIgnoreCase("yes");
 
         Sandwich sandwich = new Sandwich(size, bread, toasted);
 
-        System.out.print("Add premium toppings (meat/cheese), type 'done' to finish: ");
+        System.out.println("Add premium toppings (meat/cheese), type 'done' to finish: ");
+        System.out.println("-----------------------------------------------");
+        System.out.println("Meat: -Steak, -Ham, -Salami, -Roast Beef, -Chicken, -Bacon");
+        System.out.println("-----------------------------------------------");
+        System.out.println("Cheese: -American, -Provolone, -Cheddar, -Swiss");
         while (true) {
             String toppingType = scanner.next();
-            if (toppingType.equalsIgnoreCase("done")) break;
+            if (toppingType.equalsIgnoreCase("done"))
+                break;
             if (toppingType.equalsIgnoreCase("meat")) {
                 sandwich.addPremiumTopping(new Meat("Steak"));
             } else if (toppingType.equalsIgnoreCase("cheese")) {
@@ -75,10 +83,13 @@ public class UserInterface {
             }
         }
 
-        System.out.print("Add regular toppings (lettuce/onions/tomatoes etc.), type 'done' to finish: ");
+        System.out.println("Add regular toppings, type 'done' to finish: ");
+        System.out.println("-----------------------------------------------");
+        System.out.println("-Lettuce, - Peppers, -Onions, -Tomatoes, -Jalepenos, -Cucumbers, -Pickles, -Guacamole, -Mushrooms");
         while (true) {
             String topping = scanner.next();
-            if (topping.equalsIgnoreCase("done")) break;
+            if (topping.equalsIgnoreCase("done"))
+                break;
             sandwich.addRegularTopping(new RegularTopping(topping));
         }
 

@@ -1,0 +1,8 @@
+DELI-cious Order Receipt
+Order Date: 2024-11-12 15:02:49
+
+Sandwich - Size: 12", Bread: white, Toasted: Yes
+Toppings: [Cucumbers - Price: $0.0, Mushrooms - Price: $0.0]
+Drink - Size: Small, Flavor: Cola
+
+Total Price: $10.5

@@ -1,0 +1,7 @@
+DELI-cious Order Receipt
+Order Date: 2024-11-12 15:05:41
+
+Sandwich - Size: 12", Bread: white, Toasted: Yes
+Toppings: [Tomatoes - Price: $0.0, Jalepenos - Price: $0.0]
+
+Total Price: $8.5

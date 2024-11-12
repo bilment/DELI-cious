@@ -1,0 +1,7 @@
+DELI-cious Order Receipt
+Order Date: 2024-11-12 14:32:26
+
+Sandwich - Size: 12", Bread: white, Toasted: Yes
+Toppings: [Steak - Price: $0.0, Lettuce - Price: $0.0]
+
+Total Price: $11.5
