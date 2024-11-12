@@ -24,7 +24,19 @@ public class Order {
         chips.add(chip);
     }
 
-    public double calculateTotalPrice() {}
+    public double calculateTotalPrice() {
+        double total = 0;
+        for (Sandwich sandwich : sandwiches) {
+            total += sandwich.calculatePrice(sandwich.getSize());
+        }
+        for (Drink drink : drinks) {
+            total += drink.calculatePrice(drink.getSize());
+        }
+        for (Chips chip : chips) {
+            total += chip.calculatePrice("");
+        }
+        return total;
+    }
 
     public void saveReceipt() {}
 
