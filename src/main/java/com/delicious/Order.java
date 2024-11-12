@@ -1,5 +1,6 @@
 package com.delicious;
 import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileWriter;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -44,6 +45,11 @@ public class Order {
     }
 
     public void saveReceipt() {
+        File receiptsDir = new File("receipts");
+        if (!receiptsDir.exists()) {
+            receiptsDir.mkdir();
+        }
+
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyyMMdd-HHmmss");
         String timestamp = LocalDateTime.now().format(formatter);
         String fileName = "receipts/" + timestamp + ".txt";
