@@ -1,4 +1,8 @@
 package com.delicious;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
 
 public class Order {
@@ -38,7 +42,31 @@ public class Order {
         return total;
     }
 
-    public void saveReceipt() {}
+    public void saveReceipt() {
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyyMMdd-HHmmss");
+        String timestamp = LocalDateTime.now().format(formatter);
+        String fileName = "receipts/" + timestamp + ".txt";
+
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(fileName))) {
+            writer.write("DELI-cious Order Receipt\n");
+            writer.write("Order Date: " + LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")) + "\n\n");
+
+            for (Sandwich sandwich : sandwiches) {
+                writer.write(sandwich.toString() + "\n");
+            }
+            for (Drink drink : drinks) {
+                writer.write(drink.toString() + "\n");
+            }
+            for (Chips chip : chips) {
+                writer.write(chip.toString() + "\n");
+            }
+
+            writer.write("\nTotal Price: $" + calculateTotalPrice() + "\n");
+            System.out.println("Receipt saved successfully as " + fileName);
+        } catch (Exception e) {
+            System.err.println("Error saving receipt: " + e.getMessage());
+        }
+    }
 
     @Override
     public String toString() {}
