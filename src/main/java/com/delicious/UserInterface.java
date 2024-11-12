@@ -54,7 +54,37 @@ public class UserInterface {
         }
     }
 
-    private void addSandwichToOrder() {}
+    private void addSandwichToOrder(Order order) {
+        System.out.print("Choose sandwich size (4/8/12): ");
+        String size = scanner.next();
+        System.out.print("Choose bread type (white/wheat/rye/wrap): ");
+        String bread = scanner.next();
+        System.out.print("Would you like it toasted? (yes/no): ");
+        boolean toasted = scanner.next().equalsIgnoreCase("yes");
+
+        Sandwich sandwich = new Sandwich(size, bread, toasted);
+
+        System.out.print("Add premium toppings (meat/cheese), type 'done' to finish: ");
+        while (true) {
+            String toppingType = scanner.next();
+            if (toppingType.equalsIgnoreCase("done")) break;
+            if (toppingType.equalsIgnoreCase("meat")) {
+                sandwich.addPremiumTopping(new Meat("Steak"));
+            } else if (toppingType.equalsIgnoreCase("cheese")) {
+                sandwich.addPremiumTopping(new Cheese("Cheddar"));
+            }
+        }
+
+        System.out.print("Add regular toppings (lettuce/onions/tomatoes etc.), type 'done' to finish: ");
+        while (true) {
+            String topping = scanner.next();
+            if (topping.equalsIgnoreCase("done")) break;
+            sandwich.addRegularTopping(new RegularTopping(topping));
+        }
+
+        order.addSandwich(sandwich);
+        System.out.println("Sandwich added: " + sandwich);
+    }
 
     private void addDrinkToOrder() {}
 
