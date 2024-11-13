@@ -71,10 +71,10 @@ public class UserInterface {
         Sandwich sandwich = new Sandwich(size, bread, toasted);
 
         System.out.println("Select meat toppings, type 'done' when finished:");
+        System.out.println("---------------------------------------------------------------------");
+        System.out.println("Available meats: -Steak, -Ham, -Salami, -Roast Beef, -Chicken, -Bacon");
+        System.out.println("---------------------------------------------------------------------");
         while (true) {
-            System.out.println("---------------------------------------------------------------------");
-            System.out.println("Available meats: -Steak, -Ham, -Salami, -Roast Beef, -Chicken, -Bacon");
-            System.out.println("---------------------------------------------------------------------");
             System.out.print("Your choice: ");
             String meatChoice = scanner.next();
             if (meatChoice.equalsIgnoreCase("done")) break;
@@ -82,10 +82,10 @@ public class UserInterface {
         }
 
         System.out.println("Select cheese toppings, type 'done' when finished:");
+        System.out.println("----------------------------------------------------------");
+        System.out.println("Available cheeses: -American, -Provolone, -Cheddar, -Swiss");
+        System.out.println("----------------------------------------------------------");
         while (true) {
-            System.out.println("----------------------------------------------------------");
-            System.out.println("Available cheeses: -American, -Provolone, -Cheddar, -Swiss");
-            System.out.println("----------------------------------------------------------");
             System.out.print("Your choice: ");
             String cheeseChoice = scanner.next();
             if (cheeseChoice.equalsIgnoreCase("done")) break;
