@@ -9,8 +9,8 @@
 - Additionally, users can add drinks and chips to their orders, review the order summary with itemized prices, and confirm their order to save a detailed receipt. 
 - The application is designed to be user-friendly, offering a clear main menu, flexible customization options, and the ability to cancel or confirm orders at any stage.
 
+![Diagram.drawio.png](imgs/Diagram.drawio.png)
 
-![Delicious Diagram.png](imgs/Delicious%20Diagram.png)
 
 
 ## User Stories
