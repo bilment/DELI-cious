@@ -1,0 +1,7 @@
+DELI-cious Order Receipt
+Order Date: 2024-11-13 09:33:31
+
+Sandwich - Size: 12", Bread: White, Toasted: Yes
+Toppings: [Lettuce - Price: $0.0, Peppers - Price: $0.0, Tomatoes - Price: $0.0, Cucumbers - Price: $0.0]
+
+Total Price: $8.5

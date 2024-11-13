@@ -53,8 +53,16 @@ public class Sandwich implements Product {
 
     @Override
     public String toString() {
-        return "Sandwich - Size: " + size + "\", Bread: " + breadType + ", Toasted: " + (toasted ? "Yes" : "No") +
-                "\nToppings: " + toppings;
+        StringBuilder sb = new StringBuilder();
+        sb.append("Sandwich - Size: ").append(size).append("\", Bread: ").append(breadType)
+                .append(", Toasted: ").append(toasted ? "Yes" : "No").append("\nToppings:\n");
+
+        for (Topping topping : toppings) {
+            sb.append(" - ").append(topping.toString(this.size)).append("\n");
+        }
+
+        sb.append("Total Sandwich Price: $").append(calculatePrice(this.size));
+
+        return sb.toString();
     }
 }
-

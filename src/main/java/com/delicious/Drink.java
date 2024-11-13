@@ -32,4 +32,3 @@ public class Drink implements Product {
         return "Drink - Size: " + size + ", Flavor: " + flavor;
     }
 }
-

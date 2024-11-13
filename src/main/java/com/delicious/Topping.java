@@ -14,8 +14,7 @@ public abstract class Topping implements Product {
     @Override
     public abstract double calculatePrice(String size);
 
-    @Override
-    public String toString() {
-        return name + " - Price: $" + calculatePrice("");
+    public String toString(String size) {
+        return name + " - Price: $" + calculatePrice(size);
     }
 }
