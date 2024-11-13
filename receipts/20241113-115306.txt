@@ -1,0 +1,19 @@
+DELI-cious Order Receipt
+Order Date: 2024-11-13 11:53:06
+
+Sandwich - Size: 12", Bread: White, Toasted: Yes
+Toppings:
+ - Steak - Price: $3.0
+ - Salami - Price: $3.0
+ - Chicken - Price: $3.0
+ - Bacon - Price: $3.0
+ - American - Price: $2.25
+ - Cheddar - Price: $2.25
+ - Swiss - Price: $2.25
+ - Lettuce - Price: $0.0
+ - Onions - Price: $0.0
+ - Ketchup - Price: $0.0
+ - Mayo - Price: $0.0
+Total Sandwich Price: $27.25
+
+Total Price: $27.25

@@ -113,6 +113,17 @@ public class UserInterface {
             sandwich.addRegularTopping(new RegularTopping(topping));
         }
 
+        System.out.println("Add sauces, type 'done' to finish (no extra charge): ");
+        System.out.println("---------------------------------------------------------");
+        System.out.println("Available sauces: -Ketchup, -Mayo, -Mustard, -Ranch, -BBQ");
+        System.out.println("---------------------------------------------------------");
+        while (true) {
+            System.out.print("Your choice: ");
+            String sauce = scanner.next();
+            if (sauce.equalsIgnoreCase("done")) break;
+            sandwich.addRegularTopping(new RegularTopping(sauce));
+        }
+
         order.addSandwich(sandwich);
         System.out.println("Sandwich added: \n" + sandwich.toString());
     }
