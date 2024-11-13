@@ -31,6 +31,9 @@ List the user stories that guided the development of your application. Format th
 - As a user, I want to view the list of all items added to my order so that I can confirm everything before I checkout.
 - As a user, I want to view the different sandwich sizes available so that I can choose a size that fits my appetite.
 - As a user, I want the option to exit the application from the main menu so that I can leave the ordering system when I am finished.
+- As a user, I want to quickly order a BLT so that I can get a prepared sandwich with popular toppings.
+- As a user, I want to quickly order a PhillyCheeseSteak so that I can get a prepared sandwich with popular toppings.
+- As a user, I want to add sauces to my sandwich without extra charges so that I can personalize the flavor.
 
 
 
@@ -60,12 +63,23 @@ Follow these steps to get your application running within IntelliJ IDEA:
 
 ## Demo
 
+- Adding sandwich: 
+- ![addSandwich 1.png](imgs/addSandwich%201.png)
+- ![addSandwich 2.png](imgs/addSandwich%202.png)
+- Adding prepared sandwich:
+- ![addPrepareSandwich.png](imgs/addPrepareSandwich.png)
+- Adding drink and chips:
+- ![addDrinkAndChips.png](imgs/addDrinkAndChips.png)
+- Checking out:
+- ![checkOut.png](imgs/checkOut.png)
+- Receipt:
+- ![receipt.png](imgs/receipt.png)
 
 
 ## Future Work
 
-Outline potential future enhancements or functionalities you might consider adding:
-
+Outline potential future enhancements or functionalities you might consider adding: 
+- Payment options, paying by Cash or Card.
 
 
 ## Resources
