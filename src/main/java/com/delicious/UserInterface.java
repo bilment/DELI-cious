@@ -27,9 +27,11 @@ public class UserInterface {
             System.out.println("*              ORDER MENU              *");
             System.out.println("****************************************");
             System.out.println("*  1) Add Sandwich                     *");
-            System.out.println("*  2) Add Drink                        *");
-            System.out.println("*  3) Add Chips                        *");
-            System.out.println("*  4) Checkout                         *");
+            System.out.println("*  2) Add BLT                          *");
+            System.out.println("*  3) Add Philly Cheese Steak          *");
+            System.out.println("*  4) Add Drink                        *");
+            System.out.println("*  5) Add Chips                        *");
+            System.out.println("*  6) Checkout                         *");
             System.out.println("*  0) Cancel Order                     *");
             System.out.println("****************************************");
             System.out.print("Your choice: ");
@@ -41,12 +43,20 @@ public class UserInterface {
                     addSandwichToOrder(order);
                     break;
                 case 2:
-                    addDrinkToOrder(order);
+                    order.addSandwich(new BLT());
+                    System.out.println("BLT added: " + new BLT().toString());
                     break;
                 case 3:
-                    addChipsToOrder(order);
+                    order.addSandwich(new PhillyCheeseSteak());
+                    System.out.println("Philly Cheese Steak added: " + new PhillyCheeseSteak().toString());
                     break;
                 case 4:
+                    addDrinkToOrder(order);
+                    break;
+                case 5:
+                    addChipsToOrder(order);
+                    break;
+                case 6:
                     checkoutOrder(order);
                     ordering = false;
                     break;
